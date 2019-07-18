@@ -1,11 +1,10 @@
-cpyright@Ice Timber ¹¬¾ÅÄ¾
+cpyright@Ice Timber å®«ä¹æœ¨
 
-ÔËÐÐmain.py¼´¿É¿ªÆô·þÎñÆ÷
-Ä¬ÈÏ¶Ë¿Ú18637 ÔÚmian.pyµÄ231ÐÐ¿ÉÒÔÐÞ¸Ä
-¼´£ºhttp://122.114.119.101:18637/stock
-Èç¹û²»ÄÜÕý³£ÔËÐÐ£¬ÇëÔÚ·À»ðÇ½ÉèÖÃÖÐ¿ªÆôÄ¿±ê¶Ë¿Ú£¨Ä¬ÈÏ18637£©
+è¿è¡Œmain.pyå³å¯å¼€å¯æœåŠ¡å™¨
+é»˜è®¤ç«¯å£1020 åœ¨mian.pyçš„231è¡Œå¯ä»¥ä¿®æ”¹
+å¦‚æžœä¸èƒ½æ­£å¸¸è¿è¡Œï¼Œè¯·åœ¨é˜²ç«å¢™è®¾ç½®ä¸­å¼€å¯ç›®æ ‡ç«¯å£ï¼ˆé»˜è®¤1020ï¼‰
 
-»áÓÐ¼òµ¥µÄlogÎÄ¼þÉú³É£¨stockdata.log£©¼ÇÂ¼»ñÈ¡Êý¾ÝÊÇ·ñ³É¹¦
+ä¼šæœ‰ç®€å•çš„logæ–‡ä»¶ç”Ÿæˆï¼ˆstockdata.logï¼‰è®°å½•èŽ·å–æ•°æ®æ˜¯å¦æˆåŠŸ
 
-Ö÷Ò³£º/stock
-ÉùÃ÷Ò³£º/stock/connection
+ä¸»é¡µï¼š/stock
+å£°æ˜Žé¡µï¼š/stock/connection
