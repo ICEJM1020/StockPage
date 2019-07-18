@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Baxster Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="{{ url_for('static',filename = 'css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="{{ url_for('static',filename = 'css/style.css')}}" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!--<link rel="icon" href="{{ url_for('static',filename = 'favicon.ico')}}" type="image/x-icon" >-->
+<!-- font-awesome icons -->
+<link href="{{ url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!--<script src="{{ url_for('static',filename = 'js/jquery.nicescroll.js')}}"></script>-->
+    <!--<script src="{{ url_for('static',filename = 'js/scripts.js')}}"></script>-->
+ <!-- js-->
+<script src="{{ url_for('static',filename = 'js/jquery-1.11.1.min.js')}}"></script>
+<script src="{{ url_for('static',filename = 'js/modernizr.custom.js')}}"></script>
+<!--webfonts-->
+<!--<link href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+<!--//webfonts--> 
+
+<!-- Metis Menu -->
+<script src="{{ url_for('static',filename = 'js/metisMenu.min.js')}}"></script>
+<script src="{{ url_for('static',filename = 'js/custom.js')}}"></script>
+<link href="{{ url_for('static',filename = 'css/custom.css')}}" rel="stylesheet">
+<!--//Metis Menu -->
+</head> 
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<!--left-fixed -navigation-->
+		<div class="sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right dev-page-sidebar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" id="cbp-spmenu-s1">
+					<div class="scrollbar scrollbar1" style="overflow-y: hidden">
+						<ul class="nav" id="side-menu">
+							<li>
+								<a href="{{ url_for('gomainpage')}}" class="active"><i class="fa fa-home nav_icon"></i>指数</a>
+							</li>
+							<li>
+								<a href="{{ url_for('goconnetion')}}" class="chart-nav"><i class="fa fa-list-ul nav_icon"></i>联系我们</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //sidebar-collapse -->
+				</nav>
+			</div>
+		</div>
+		<!--left-fixed -navigation-->
+		<!-- header-starts -->
+		<div class="sticky-header header-section ">
+			<div class="header-left">
+				<!--logo -->
+				<div class="logo">
+					<a href="{{ url_for('gomainpage')}}">
+						<ul>	
+							<li><img src="{{ url_for('static',filename = 'images/logo1.png')}}" alt="" /></li>
+							<li><h1>STOCK</h1></li>
+							<div class="clearfix"> </div>
+						</ul>
+					</a>
+				</div>
+				<!--//logo-->
+
+				
+				
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-right">
+				
+				<!--notification menu end -->
+				<div class="profile_details">		
+					<ul>
+						<li class="dropdown profile_details_drop">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<div class="profile_img">	
+									<span class="prfil-img"><img src="{{ url_for('static',filename = 'images/a.png')}}" alt=""> </span>
+									<div class="clearfix"></div>	
+								</div>	
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--toggle button start-->
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<!--toggle button end-->
+				<div class="clearfix"> </div>				
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+		<!-- //header-ends -->
+		<!-- main content start-->
+		<div id="page-wrapper">
+			<div class="main-page">
+				<!-- four-grids -->
+				<div class="row four-grids">
+					<div class="col-md-6 ticket-grid">
+						<div class="tickets">
+							<div class="grid-left">
+								<div class="book-icon">
+									<image src="{{ url_for('static',filename = 'images/shangzheng.png')}}" class="fa fa-rocket"></image>
+								</div>
+							</div>
+							<div class="grid-right">
+								<h3>上证指数<span>SHA: 000001</span></h3>
+								<b id="SH" style="font-size: 120%"></b>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="col-md-6 ticket-grid">
+						<div class="tickets">
+							<div class="grid-left">
+								<div class="book-icon">
+									<image src="{{ url_for('static',filename = 'images/shenzheng.png')}}" class="fa fa-user"></image>
+								</div>
+							</div>
+							<div class="grid-right">
+								<h3>深证指数<span>SHE: 399001</span></h3>
+								<b id="SHE" style="font-size: 120%"></b>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<!--<div class="clearfix"> </div>-->
+				</div>
+				<!-- //four-grids -->
+				<!--row-->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-widget">
+							<div class="panel-title">
+							  上证指数 日线
+							  <ul class="panel-tools">
+								<li><a class="icon minimise-tool"><i class="fa fa-minus"></i></a></li>
+								<li><a class="icon expand-tool"><i class="fa fa-expand"></i></a></li>
+								<li><a class="icon closed-tool"><i class="fa fa-times"></i></a></li>
+							  </ul>
+							</div>
+							<image src="{{ url_for('static',filename = 'Data/0_sh.gif')}}" style="width: 100%"></image>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="panel panel-widget">
+							<div class="panel-title">
+							  上证指数 日K
+							  <ul class="panel-tools">
+								<li><a class="icon minimise-tool"><i class="fa fa-minus"></i></a></li>
+								<li><a class="icon expand-tool"><i class="fa fa-expand"></i></a></li>
+								<li><a class="icon closed-tool"><i class="fa fa-times"></i></a></li>
+							  </ul>
+							</div>
+							<image src="{{ url_for('static',filename = 'Data/1_sh.gif')}}" style="width: 100%"></image>
+						</div>
+					</div>
+
+                    <div class="col-md-12">
+						<div class="panel panel-widget">
+							<div class="panel-title">
+							  指数表
+							  <ul class="panel-tools">
+								<li><a class="icon minimise-tool"><i class="fa fa-minus"></i></a></li>
+								<li><a class="icon expand-tool"><i class="fa fa-expand"></i></a></li>
+								<li><a class="icon closed-tool"><i class="fa fa-times"></i></a></li>
+							  </ul>
+							</div>
+							<table id="indexdata" type="table" class="table"></table>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+		</div>
+		<!--footer-->
+		 <div class="dev-page">
+	 
+			<!-- page footer -->   
+			<!-- dev-page-footer-closed dev-page-footer-fixed -->
+            <div class="dev-page-footer dev-page-footer-fixed"> 
+				<!-- container -->
+				<div class="container">
+					<div class="copyright">
+						<p>Copyright &copy; Ice Timber_宫九木 </p>
+					</div>
+                </div>
+				<!-- //container -->
+            </div>
+            <!-- /page footer -->
+		</div>
+        <!--//footer-->
+	</div>
+	</div>
+	<!-- Classie -->
+		<script src="{{ url_for('static',filename = 'js/classie.js')}}"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	<!-- Bootstrap Core JavaScript -->
+        <script type="text/javascript" src="{{ url_for('static',filename = 'js/bootstrap.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename = 'js/dev-loaders.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename = 'js/dev-layout-default.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.marquee.js')}}"></script>
+		<link href="{{ url_for('static',filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+		<!-- candlestick -->
+		<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.jqcandlestick.min.js')}}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/jqcandlestick.css')}}" />
+		<!-- //candlestick -->
+		<!--max-plugin-->
+		<script type="text/javascript" src="{{ url_for('static',filename = 'js/plugins.js')}}"></script>
+		<!--//max-plugin-->
+		<!-- real-time-updates -->
+		<script language="javascript" type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flot.js')}}"></script>
+		<!-- //real-time-updates -->
+        <!--<script src="{{ url_for('static',filename = 'js/svg-donut-chart-framework.js')}}"></script>-->
+		<!-- error-graph -->
+		<script language="javascript" type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flot.errorbars.js')}}"></script>
+		<script language="javascript" type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flot.navigate.js')}}"></script>
+		<!-- status -->
+		<script src="{{ url_for('static',filename = 'js/jquery.fn.gantt.js')}}"></script>
+		<!-- //status -->
+        <script type="text/javascript">
+			$(function () {
+			    aimtable = document.getElementById( 'indexdata' )
+			    var aimurl = "{{ url_for('static',filename = 'Data/data.json')}}"
+    		$.ajax({
+				type:"get",
+				url:aimurl,
+            	dataType:'json',
+            	success:function (data) {
+                	queryTable(data);
+            	},error:function (){alert('加载数据失败')}
+        	});
+
+        	function queryTable(data){
+        	    var thead = "<thead><tr><th>序号</th><th>名称</th><th>指数</th><th>涨幅</th>";
+        	    var tbody = "<tbody>";
+        	    var tr = "";
+				var k=1;
+        	    for(var i in data){
+                    tr += "<tr><td>" + k + "</td>"
+					tr += "<td>"+data[i]['name']+"</td>"
+					if(data[i]['range']<0){
+                        tr += "<td style='color:#008b00 '>"+data[i]['price']+"</td>"
+						tr += "<td style='color:#008b00'>"+data[i]['range']+"</td>"
+					}
+					else if(data[i]['range']>0){
+                        tr += "<td style='color: #ff0000 '>"+data[i]['price']+"</td>"
+						tr += "<td style='color:#ff0000'>"+data[i]['range']+"</td>"
+					}
+					else{
+                        tr += "<td style='color:#000000 '>"+data[i]['price']+"</td>"
+						tr += "<td style='color:#000000'>"+data[i]['range']+"</td>"
+					}
+					tr += "</tr>";
+                    k += 1;
+                }
+                tbody += tr;
+                thead += "</tr></thead>";
+       		    aimtable.innerHTML = thead+tbody;
+       		    document.getElementById('SH').innerText=data[0]['price']
+				document.getElementById('SHE').innerText=data[1]['price']
+				if (data[0]['range']<0){
+				    document.getElementById('SH').style.color='#008b00'
+				}
+				else if (data[0]['range']>0){
+				    document.getElementById('SH').style.color='#ff0000'
+				}
+				else {
+				    document.getElementById('SH').style.color='#000000'
+				}
+				if (data[1]['range']<0){
+				    document.getElementById('SHE').style.color='#008b00'
+				}
+				else if (data[1]['range']>0){
+				    document.getElementById('SHE').style.color='#ff0000'
+				}
+				else {
+				    document.getElementById('SHE').style.color='#000000'
+				}
+        	};
+		    });
+        </script>
+</body>
+</html>

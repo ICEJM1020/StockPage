@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Connect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Baxster Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="{{ url_for('static',filename = 'css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="{{ url_for('static',filename = 'css/style.css')}}" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<link rel="icon" href="{{ url_for('static',filename = 'favicon.ico')}}" type="image/x-icon" >
+<!-- font-awesome icons -->
+<link href="{{ url_for('static',filename = 'css/font-awesome.css')}}" rel="stylesheet">
+<!-- //font-awesome icons -->
+
+ <!-- js-->
+<script src="{{ url_for('static',filename = 'js/jquery-1.11.1.min.js')}}"></script>
+<script src="{{ url_for('static',filename = 'js/modernizr.custom.js')}}"></script>
+<!--animate-->
+<link href="{{ url_for('static',filename = 'css/animate.css')}}" rel="stylesheet" type="text/css" media="all">
+<script src="{{ url_for('static',filename = 'js/wow.min.js')}}"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+<!-- Metis Menu -->
+<script src="{{ url_for('static',filename = 'js/metisMenu.min.js')}}"></script>
+<script src="{{ url_for('static',filename = 'js/custom.js')}}"></script>
+<link href="{{ url_for('static',filename = 'css/custom.css')}}" rel="stylesheet">
+<!--//Metis Menu -->
+</head> 
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<!--left-fixed -navigation-->
+		<div class="sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right dev-page-sidebar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" id="cbp-spmenu-s1">
+					<div class="scrollbar scrollbar1" style="overflow-y: hidden">
+						<ul class="nav" id="side-menu">
+							<li>
+								<a href="{{ url_for('gomainpage')}}" class="active"><i class="fa fa-home nav_icon"></i>指数</a>
+							</li>
+							<li>
+								<a href="{{ url_for('goconnetion')}}" class="chart-nav"><i class="fa fa-list-ul nav_icon"></i>联系我们</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //sidebar-collapse -->
+				</nav>
+			</div>
+		</div>
+		<!--left-fixed -navigation-->
+		<!-- header-starts -->
+		<div class="sticky-header header-section ">
+			<div class="header-left">
+				<!--logo -->
+				<div class="logo">
+					<a href="{{ url_for('goindex')}}">
+						<ul>	
+							<li><img src="{{ url_for('static',filename = 'images/logo1.png')}}" alt="" /></li>
+							<li><h1>STOCK</h1></li>
+							<div class="clearfix"> </div>
+						</ul>
+					</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-right">
+				
+				<!--notification menu end -->
+				<div class="profile_details">		
+					<ul>
+						<li class="dropdown profile_details_drop">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<div class="profile_img">	
+									<span class="prfil-img"><img src="{{ url_for('static',filename = 'images/a.png')}}" alt=""> </span>
+									<div class="clearfix"></div>	
+								</div>	
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--toggle button start-->
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<!--toggle button end-->
+				<div class="clearfix"> </div>				
+			</div>
+			<div class="clearfix"> </div>	
+		</div>
+		<!-- //header-ends -->
+		<!-- main content start-->
+		<div id="page-wrapper">
+			<div class="main-page">
+				<!--grids-->
+				<div class="grids">
+					<div class="progressbar-heading grids-heading">
+						<h2>声明！</h2>
+					</div>
+					<div class="panel panel-widget">
+						<div class="block-page">
+							<p>本网页只作为内部交流使用，禁止用于任何商业用途！
+								<br>
+								制作：Ice Timber_宫九木
+							</p>
+						</div>
+						<div>
+            <form action="{{ url_for('up_pic') }}" method="post" enctype="multipart/form-data">
+            <label for="fid"><input type="file" id="fid" name="f1"></label>
+            <input type="submit" value="上传">
+        </form>
+        </div>
+					</div>
+				</div>
+				<!--//grids-->
+
+			</div>
+		<!--footer-->
+		 <div class="dev-page">
+	 
+			<!-- page footer -->   
+			<!-- dev-page-footer-closed dev-page-footer-fixed -->
+            <div class="dev-page-footer dev-page-footer-fixed"> 
+				<!-- container -->
+				<div class="container">
+					<div class="copyright">
+						<p>Copyright &copy; Ice Timber_宫九木 </p>
+					</div>
+                </div>
+				<!-- //container -->
+            </div>
+            <!-- /page footer -->
+		</div>
+        <!--//footer-->
+	</div>
+	</div>
+	<!-- Classie -->
+		<script src="{{ url_for('static',filename = 'js/classie.js')}}"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+			}
+		</script>
+	<!-- Bootstrap Core JavaScript -->
+        <script type="text/javascript" src="{{ url_for('static',filename = 'js/bootstrap.min.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename = 'js/dev-loaders.js')}}"></script>
+        <script type="text/javascript" src="{{ url_for('static',filename = 'js/dev-layout-default.js')}}"></script>
+		<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.marquee.js')}}"></script>
+		<link href="{{ url_for('static',filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+		<!-- candlestick -->
+		<script type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.jqcandlestick.min.js')}}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'css/jqcandlestick.css')}}" />
+		<!-- //candlestick -->
+		<!--max-plugin-->
+		<script type="text/javascript" src="{{ url_for('static',filename = 'js/plugins.js')}}"></script>
+		<!--//max-plugin-->
+		<!--scrolling js-->
+		<!--<script src="{{ url_for('static',filename = 'js/jquery.nicescroll.js')}}"></script>-->
+		<!--<script src="{{ url_for('static',filename = 'js/scripts.js')}}"></script>-->
+		<!--//scrolling js-->
+		<!-- real-time-updates -->
+		<script language="javascript" type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flot.js')}}"></script>
+		<!-- //real-time-updates -->
+		<!-- error-graph -->
+		<script language="javascript" type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flot.errorbars.js')}}"></script>
+		<script language="javascript" type="text/javascript" src="{{ url_for('static',filename = 'js/jquery.flot.navigate.js')}}"></script>
+		<!-- //error-graph -->
+		<!--<script src="{{ url_for('static',filename = 'js/svg-donut-chart-framework.js')}}"></script>-->
+		<!-- //Skills-graph -->
+		<!-- status -->
+		<script src="{{ url_for('static',filename = 'js/jquery.fn.gantt.js')}}"></script>
+		<!-- //status -->
+		
+</body>
+</html>

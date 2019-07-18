@@ -1,0 +1,11 @@
+cpyright@Ice Timber 宫九木
+
+运行main.py即可开启服务器
+默认端口18637 在mian.py的231行可以修改
+即：http://122.114.119.101:18637/stock
+如果不能正常运行，请在防火墙设置中开启目标端口（默认18637）
+
+会有简单的log文件生成（stockdata.log）记录获取数据是否成功
+
+主页：/stock
+声明页：/stock/connection

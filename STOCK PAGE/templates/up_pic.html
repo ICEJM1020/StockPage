@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+        <div>
+            <form action="{{ url_for('up_pic') }}" method="post" enctype="multipart/form-data">
+            <label for="fid"><input type="file" id="fid" name="f1"></label>
+            <input type="submit" value="上传">
+        </form>
+        </div>
+    </body>
+</html>
